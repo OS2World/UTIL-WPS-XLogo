@@ -1,0 +1,17 @@
+         OS/2 Upload Information Template for ftp-os2.nmsu.edu
+
+Archive Name:  XLogo.zip
+Program Description: (keep it under 60 characters)
+
+PM-based XLogo with source
+
+Operating System Versions:   OS/2 3.0 (Warp) and above
+Program Source:       none
+Replaces:             none
+
+Your name:            Antonino Iannella
+Your email address:   9308390r@lux.levels.unisa.edu.au
+
+Proposed directory for placement:   /pub/os2/wpsutil or /pub/os2/graphics
+
+

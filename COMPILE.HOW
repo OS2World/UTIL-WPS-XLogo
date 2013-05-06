@@ -1,0 +1,21 @@
+
+How to compile XLogo v1.0
+July 1996
+_________________________
+
+I use the GCC compiler. I am hopeless with other compilers.
+You should also have the Warp Developer's Toolkit installed.
+
+First type
+
+ rc -r XLogo.rc
+
+then
+ gcc -Zomf -Zsys -s -o Xlogo.exe Xlogo.c Xlogo.res Xlogo.def
+
+ (or for simplicity,
+  gcc -o XLogo.exe Xlogo.c Xlogo.res Xlogo.def )
+
+Execute by running XLogo.exe.
+Enjoy.
+

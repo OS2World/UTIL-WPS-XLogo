@@ -1,0 +1,19 @@
+#ifndef OS2_INCLUDED
+   #include <os2.h>
+#endif
+DLGINCLUDE 1 "xpdlg.h"
+
+DLGTEMPLATE IDD_ABOUT LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Product information", IDD_ABOUT, 111, 21, 194, 40, WS_VISIBLE, 
+            FCF_SYSMENU | FCF_TITLEBAR
+    BEGIN
+        CONTROL         ID_WBITMAP, ID_WBITMAP, 11, 8, 21, 16, WC_STATIC, 
+                        SS_BITMAP | WS_GROUP | WS_VISIBLE
+        LTEXT           "XLogo for OS/2", ID_LINE1, 55, 26, 75, 11
+        LTEXT           "by Antonino Iannella", ID_LINE2, 55, 16, 90, 8, 
+                        DT_VCENTER
+        LTEXT           "(C) 1996", ID_LINE3, 55, 3, 70, 8, DT_VCENTER
+        PUSHBUTTON      "OK", DID_OK, 149, 2, 42, 18
+    END
+END

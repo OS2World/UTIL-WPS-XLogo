@@ -1,0 +1,44 @@
+
+/**************** Xlogo Program Resource Script File (.RC) *****************
+ *
+ *  The window resources used by an application are defined in a resource
+ *  script file .RC.  This file is compiled by the resource compiler to
+ *  produce an executable-format file.
+ *  The definitions are either statements which define resources or
+ *  references to other files containing resources.
+ *
+ *  Original is copyright (C) 1991 IBM Corporation
+ *  XLogo (c) 1996 Antonino Iannella
+ *
+ *      DISCLAIMER.
+ *      The code is provided "AS IS", without
+ *      warranty of any kind.  I shall not be liable for any damages
+ *      arising out of your use of the sample code, even if they have been
+ *      advised of the possibility of such damages.                                                    
+ ***************************************************************************/
+
+#include <os2.h>
+#include "Xlogo.h"
+#include "Xpdlg.h"
+
+ICON   ID_X       Xlogo.ico
+BITMAP ID_WBITMAP Warp.bmp
+BITMAP 102        Xmenu.bmp
+
+MENU ID_X
+BEGIN
+  MENUITEM "#102",          IDM_BITMAP, MIS_BITMAP | MIS_STATIC
+  MENUITEM SEPARATOR
+  MENUITEM "~About...\tF1", IDM_ABOUT
+  MENUITEM "E~xit\tF3",     IDM_EXIT
+END
+
+ACCELTABLE ID_X
+BEGIN
+  VK_F1,  IDM_ABOUT,    VIRTUALKEY
+  VK_F3,  IDM_EXIT,     VIRTUALKEY
+END
+
+rcinclude xpdlg.dlg
+
+
